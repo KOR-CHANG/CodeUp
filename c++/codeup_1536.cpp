@@ -4,7 +4,15 @@ int n;
 
 long long int d[110];
 
-// 이 부분에 들어가야 될 코드를 작성하여 제출
+int f(){
+    long long int temp = d[1];
+    for(int i = 1; i<=n; i++){
+        if(d[i] < temp){
+			temp = d[i];
+		}
+    }
+    return temp;
+}
 int main()
 {
   scanf("%d", &n);
